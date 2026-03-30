@@ -24,8 +24,10 @@ Active
     - Proxmox
       - Home assistant OS (VM)
       - Crafty Controller (LXC)
-  - ZimaBoard 2 (installed, unpowered)
-    - Storage/ services
+  - ZimaBoard 2
+    - TrueNAS CE
+      - ZFS Mirror
+        - 2x 8Tb HDDs (~7.5Tb usable)
 
 - Standalone
   - UniFi UDR7
