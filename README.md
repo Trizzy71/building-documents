@@ -20,10 +20,15 @@ Active
   - 5-port 2.5 GbE swich (TP-Link)
   - 3D-printed patch panel
     - So it's pretty
-  - Beelink s12 Mini 
+  - Beelink s12 Mini (Planning to migrate my stack to NixOS in the near-future)
     - Proxmox
       - Home assistant OS (VM)
+      - NixOS (VM)
       - Crafty Controller (LXC)
+      - PiHole (LXC)
+      - Immich (LXC)
+      - Jellyfin (LXC)
+
   - ZimaBoard 2
     - TrueNAS CE
       - ZFS Mirror
