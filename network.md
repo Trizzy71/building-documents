@@ -41,7 +41,7 @@ Still no VLANs. Everything is on one flat network for now. It's on the list.
 - Checked from cellular with wifi off. Jellyfin works, Valheim friends can still connect
 
 ## Storage Traffic
-- NFS for machines, SMB for people. Never share the same dataset both ways, the permissions fight each other
+- NFS for machines, SMB for people
 - NFS uses UID/GID 3000 so the containers on Proxmox map cleanly
 - Proxmox backups go to `tank/backups/proxmox` over NFS, export locked to x.x.x.28
   - vzdump every day at noon, all guests, keeps 3 daily / 1 weekly / 2 monthly
