@@ -5,42 +5,48 @@ Build a reliable, segmented home server environment for learning systems, networ
 
 ---
 
-## Planned Architecture
+## Architecture
 
 ### NAS
 - OS: TrueNAS CE
 - Role:
   - Primary storage
-  - Docker host for core services
+  - Runs the core apps (Immich, Paperless, Tailscale)
 - Notes:
   - Focus on stability and data integrity
+  - Laid out the same as client builds
 
 ### Mini PC
 - OS: Proxmox
 - Role:
   - Virtualization
   - Safe experimentation
-- Notes:
-  - Break things without risking core data
+  - Game servers
 
 ---
 
-## Services to Deploy
+## Services
 
-### Containers
-- Docker
-- Planned services:
-  - AdGuard or Pi-hole (DNS filtering)
-  - WireGuard client (secure tunnel)
-  - Media / utility containers as needed (Plex, n8n, AlbyHUB)
+### Done
+- [x] Docker (CT 100 on Proxmox, TrueNAS apps on the NAS)
+- [x] DNS filtering. Ran Pi-hole for a while, moved DNS back to the UniFi gateway instead
+- [x] Remote access over Tailscale instead of a WireGuard server
+- [x] Proton VPN WireGuard client on UniFi
+- [x] Immich, Paperless-ngx, Jellyfin
+
+### Still want
+- [ ] Homepage dashboard
+- [ ] Ad blocking on the gateway
+- [ ] n8n, AlbyHub
+- [ ] Offsite backup
 
 ### Networking
-- VLANs:
+- [ ] VLANs:
   - Management
   - Servers
   - Clients
   - IoT (future)
-- Firewall:
+- [ ] Firewall:
   - Inter-VLAN rules (default deny, allow as needed)
 
 ---
@@ -48,7 +54,7 @@ Build a reliable, segmented home server environment for learning systems, networ
 ## Security Goals
 - Least privilege
 - Network segmentation
-- Minimal exposed services
+- Minimal exposed services (nothing port forwarded, Tailscale only)
 - Encrypted traffic where possible
 
 ---
@@ -64,4 +70,4 @@ Build a reliable, segmented home server environment for learning systems, networ
 ---
 
 ## Status
-Completed (for now).
+Storage and services are where I want them. Segmentation isn't started.
