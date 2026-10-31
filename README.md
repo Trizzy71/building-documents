@@ -24,9 +24,9 @@ Last push was Oct 2026. Renamed the pool `Main` to `tank` and redid the datasets
     - So it's pretty
   - Beelink S12 Mini
     - Proxmox
-      - CT 100 `docker`: Jellyfin (old Immich still here until I clean it up)
-      - CT 103 Crafty Controller (Minecraft)
-      - CT 200 Valheim server for friends, has its own Tailscale node
+      - CT 1** `docker`: Jellyfin (old Immich still here until I clean it up)
+      - CT 1** Crafty Controller (Minecraft)
+      - CT 2** Valheim server for friends, has its own Tailscale node
       - NixOS (VM)
     - Backs up all guests to the NAS daily
 
