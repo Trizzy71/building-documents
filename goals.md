@@ -28,7 +28,7 @@ Build a reliable, segmented home server environment for learning systems, networ
 ## Services
 
 ### Done
-- [x] Docker (CT 100 on Proxmox, TrueNAS apps on the NAS)
+- [x] Docker (CT 1** on Proxmox, TrueNAS apps on the NAS)
 - [x] DNS filtering. Ran Pi-hole for a while, moved DNS back to the UniFi gateway instead
 - [x] Remote access over Tailscale instead of a WireGuard server
 - [x] Proton VPN WireGuard client on UniFi
