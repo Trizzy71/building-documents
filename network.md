@@ -42,10 +42,10 @@ Still no VLANs. Everything is on one flat network for now. It's on the list.
 
 ## Storage Traffic
 - NFS for machines, SMB for people
-- NFS uses UID/GID 3000 so the containers on Proxmox map cleanly
+- NFS uses UID/GID 3*** so the containers on Proxmox map cleanly
 - Proxmox backups go to `tank/backups/proxmox` over NFS, export locked to x.x.x.28
   - vzdump every day at noon, all guests, keeps 3 daily / 1 weekly / 2 monthly
-- CT 100 still mounts photos over NFS for the old Immich. That export goes away once I delete it
+- CT 1** still mounts photos over NFS for the old Immich. That export goes away once I delete it
 
 ## VPN
 - Proton VPN
@@ -55,4 +55,4 @@ Still no VLANs. Everything is on one flat network for now. It's on the list.
 - [ ] VLANs: management, servers, clients, IoT. Get the homelab and game servers off the main LAN
 - [ ] Inter-VLAN firewall rules (default deny)
 - [ ] Ad blocking on the UDR7
-- [ ] Make sure the NAS has a reservation at .133
+- [ ] Make sure the NAS has a reservation at .1**
